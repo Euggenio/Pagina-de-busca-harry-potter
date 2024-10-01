@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+                
+    
+
+    
+    
+    <title>harry</title>
+</head>
+
+<body>
+    
+
+        <header>
+
+        <h1>HARRY POTTER</h1>
+    </header>
+    <main>
+        <section>
+            
+            <input type="text" placeholder="Digite o nome do bruxo" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+ 
+        </section>
+
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+
+      <!--   <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Harry Potter</a>
+
+                </h2>
+                <p class="classificacao-meta">Grifinória</p>
+                <p class="descricao-meta">Harry Potter é um garoto órfão que descobre aos 11 anos ser um bruxo e está destinado a grandes coisas. Ele cresce no mundo da magia, enfrenta desafios perigosos e se torna um dos bruxos mais famosos de sua geração.
+ </p>
+                <a href=" https://pt.wikipedia.org/wiki/Harry_Potter_(personagem) "><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                </a>
+  </div>
+
+  
+
+          <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank"> Hermione</a>
+                </h2>
+                <p class="classificacao-meta">Grifinória</p>
+                <p class="descricao-meta">Hermione Granger é uma bruxa nascida trouxa, inteligente e leal, que se torna a melhor amiga de Harry Potter e Ron Weasley. Com sua sede por conhecimento e habilidade em feitiços, ela se torna uma aliada indispensável em suas aventuras em Hogwarts</p>
+                <a href=" https://pt.wikipedia.org/wiki/Hermione_Granger"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                </a>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Ron Weasley</a>
+                </h2>
+                <p class="classificacao-meta">  
+                   Grifinória </p>
+                <p class="descricao-meta">Ron Weasley é o melhor amigo de Harry Potter e Hermione Granger. Vindo de uma família de bruxos de sangue puro, mas com poucos recursos financeiros, Ron é leal, engraçado e um pouco inseguro.</p>
+                <a href="  https://pt.wikipedia.org/wiki/Ron_Weasley"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                </a>
+                </div>
+
+
+                <div class="item-resultado">
+                    <h2>
+                        <a href="#" target="_blank">Ginny Weasley</a>
+                    </h2>
+                    <p class="classificacao-meta">  
+                        Grifinória</p>
+                    <p class="descricao-meta">Ginny Weasley é a irmã mais nova de Ron e a única filha de Arthur e Molly Weasley. Inicialmente tímida, ela se desenvolve em uma bruxa habilidosa e confiante, tornando-se uma jogadora de Quadribol talentosa e uma bruxa poderosa.</p>
+                    <a href="https://harrypotter.fandom.com/pt-br/wiki/Ginevra_Weasley"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                    </a>
+                    </div>
+
+
+                    <div class="item-resultado">
+                        <h2>
+                            <a href="#" target="_blank"> Neville Longbottom</a>
+                        </h2>
+                        <p class="classificacao-meta">  
+                            Grifinória</p>
+                        <p class="descricao-meta">
+                            Neville Longbottom é um bruxo da Grifinória, conhecido por sua timidez e dificuldades iniciais com os feitiços. Apesar de ser frequentemente subestimado, Neville se revela um bruxo corajoso e leal, disposto a enfrentar qualquer perigo para proteger seus amigos.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Neville_Longbottom"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                        </a>
+                        </div>
+
+
+                        <div class="item-resultado">
+                            <h2>
+                                <a href="#" target="_blank"> Draco Malfoy</a>
+                            </h2>
+                            <p class="classificacao-meta">  
+                                Sonserina</p>
+                            <p class="descricao-meta"> Draco Malfoy é um bruxo puro-sangue, rival de Harry Potter desde o primeiro ano em Hogwarts. Proveniente de uma família rica e com fortes laços com Lord Voldemort, Draco é arrogante, preconceituoso e busca constantemente humilhar aqueles que ele considera inferiores</p>
+                            <a href="https://pt.wikipedia.org/wiki/Draco_Malfoy"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                            </a>
+                            </div>
+
+
+                            <div class="item-resultado">
+                                <h2>
+                                    <a href="#" target="_blank">Tom Riddle</a>
+                                </h2>
+                                <p class="classificacao-meta">  
+                                 Sonserina</p>
+                                <p class="descricao-meta">Tom Marvolo Riddle, mais conhecido como Lord Voldemort, é o principal antagonista da saga Harry Potter. Um bruxo extremamente poderoso e obssecado pela imortalidade, ele busca dominar o mundo mágico, eliminando aqueles que ele considera impuros. </p>
+                                <a href=" https://harrypotter.fandom.com/pt-br/wiki/Tom_Riddle"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                </a>
+                                </div>
+
+
+                                <div class="item-resultado">
+                                    <h2>
+                                        <a href="#" target="_blank">Regulus Black</a>
+                                    </h2>
+                                    <p class="classificacao-meta">  
+                                         Sonserina</p>
+                                    <p class="descricao-meta">Regulus Black, irmão mais novo de Sirius Black, era um Sonserino puro-sangue e inicialmente um seguidor de Lord Voldemort. No entanto, após se dar conta dos horrores cometidos pelo Lorde das Trevas, Regulus tomou uma decisão corajosa e arriscada: roubou uma das Horcruxes de Voldemort e a substituiu por um objeto falso, planejando sua destruição. </p>
+                                    <a href="https://harrypotter.fandom.com/pt-br/wiki/R%C3%A9gulo_Black"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                    </a>
+                                    </div>
+
+
+                                    <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank"> Severus Snape</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                             Sonserina</p>
+                                        <p class="descricao-meta">Severus Snape é um personagem complexo e enigmático do universo Harry Potter. Professor de Poções em Hogwarts, ele é conhecido por sua personalidade fria e sarcástica, especialmente com Harry Potter. </p>
+                                        <a href="https://pt.wikipedia.org/wiki/Severus_Snape"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div>
+
+
+                                        
+                                    <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Dolores Umbridge</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                            Sonserina</p>
+                                        <p class="descricao-meta">Dolores Umbridge é uma das vilãs mais odiadas da saga Harry Potter. Uma bruxa manipuladora e cruel, ela ascende ao poder em Hogwarts no quinto livro, impondo um regime de terror e repressão.</p>
+                                        <a href="https://en.wikipedia.org/wiki/Dolores_Umbridge"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+                                         <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank"> Luna Lovegood</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Corvinal</p>
+                                        <p class="descricao-meta">Luna Lovegood é uma personagem adorável e excêntrica da saga Harry Potter. Aluna da casa Corvinal, ela é conhecida por sua imaginação fértil, sua crença em criaturas mágicas e sua visão única do mundo.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Luna_Lovegood"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+
+                                        <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Cho-Chang</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Corvinal</p>
+                                        <p class="descricao-meta">Cho Chang é uma personagem que desperta a curiosidade de muitos fãs da saga Harry Potter. Apanhadora do time de Quadribol da Corvinal, ela é conhecida por sua beleza e habilidade no esporte.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Cho_Chang"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+
+                                        
+                                        <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Padma Patil</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Corvinal</p>
+                                        <p class="descricao-meta">Padma Patil é uma das gêmeas Patil, aluna da casa Corvinal em Hogwarts. Apesar de muitas vezes ser ofuscada pela irmã, Parvati, Padma possui uma personalidade distinta e um papel importante na história de Harry Potter.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Padma_Patil"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+
+                                        <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Cedric Diggory</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Lufa-Lufa</p>
+                                        <p class="descricao-meta">Cedric Diggory é um personagem que, apesar de ter um papel relativamente curto na saga Harry Potter, deixou uma marca profunda nos corações dos fãs. Representante da casa Lufa-Lufa, ele é conhecido por sua lealdade, honra e espírito esportivo.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Cedrico_Diggory#:~:text=Cedrico%20Diggory%20(setembro%2Foutubro%20de,para%20a%20Casa%20Lufa%2DLufa."><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+
+                                        <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Nymphadora Tonks</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Lufa-Lufa</p>
+                                        <p class="descricao-meta">Nymphadora Tonks, também conhecida como Tonks, é uma personagem divertida e versátil da saga Harry Potter. Uma metamorfa talentosa da casa Lufa-Lufa, ela é conhecida por sua capacidade de mudar sua aparência à vontade.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Ninfadora_Tonks#:~:text=Tonks%20come%C3%A7ou%20seu%20primeiro%20ano,sangue%20da%20Casa%20dos%20Black."><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+
+
+
+
+                                        
+                                        <div class="item-resultado">
+                                        <h2>
+                                            <a href="#" target="_blank">Newt Sscamander</a>
+                                        </h2>
+                                        <p class="classificacao-meta">  
+                                         Lufa-Lufa</p>
+                                        <p class="descricao-meta">Newt Scamander é um personagem encantador e excêntrico do universo de Harry Potter, introduzido na série de filmes "Animais Fantásticos e Onde Habitam". Um magizoólogo renomado, Newt dedica sua vida ao estudo e à proteção de criaturas mágicas.</p>
+                                        <a href="https://harrypotter.fandom.com/pt-br/wiki/Newton_Scamander"><button style="background:  #4647AD; border-radius: 6px; padding: 11px; cursor: pointer; color: #F8FEF8; border: none; font-size: 16px;">Mais informações</button>
+                                        </a>
+                                        </div> 
+
+                                    -->
+
+
+
+
+
+
+
+                                        
+                                           
+
+
+
+
+
+  
+                                    
+                                        
+                                        
+                        
+                                        
+                                        
+        
+    
+
+
+
+
+
+           
+            
+            
+            
+        </section>
+    </main>
+
+    <hr><!--quebra de linha colocando espaço entre um elemento e outro-->
+    <hr>
+
+    <footer>
+        
+        <p>© 2024 - Todos os Direitos Reservados - Wizarding World</p>
+      
+        <!--icones das redes sociais-->
+       <nav class="redes">
+            <ul style="list-style: none;">
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="imagens/iconface.png" alt="facebook">
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="imagens/iconinsta.png" alt="instagram">
+
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="imagens/iconyoutube.png" alt="twitter">
+
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="imagens/icontwitter.png" alt="twitter">
+
+                    </a>
+                </li>
+
+
+
+
+
+            </ul>
+        </nav> 
+           <!--icones das redes sociais fim-->
+              
+             
+          </footer>
+
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
