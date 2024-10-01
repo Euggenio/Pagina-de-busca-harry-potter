@@ -1,4 +1,4 @@
-## **‍♂️ Leia-me: Mergulhe no Mundo Mágico da Programação! ‍♂️**
+
 
 **O que é esse projeto?**
 
