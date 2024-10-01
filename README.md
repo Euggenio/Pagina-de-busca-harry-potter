@@ -33,4 +33,5 @@ Prepare-se para uma aventura mágica no mundo da programação! Essa aplicação
 
 **Vamos juntos criar um mundo mágico na programação!** 
 
-**Abraços e feitiços!** ‍♂️
+**Abraços e feitiços!**
+
